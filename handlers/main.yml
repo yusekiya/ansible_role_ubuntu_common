@@ -1,7 +1,7 @@
 ---
-- name: restart crond
+- name: restart cron
   service:
-    name: crond
+    name: cron
     state: restarted
 
 - name: Restart journald

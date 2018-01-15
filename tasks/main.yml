@@ -2,7 +2,7 @@
 - name: Change timezone
   timezone:
     name: "{{ ubuntu_common_timezone }}"
-  notify: restart crond
+  notify: restart cron
   tags:
     - timezone
 
