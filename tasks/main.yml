@@ -1,12 +1,8 @@
 ---
 - name: Change timezone
-  template:
-    src: timezone.j2
-    dest: /etc/timezone
-    owner: root
-    group: root
-    mode: 0644
-  notify: Update timezone
+  timezone:
+    name: "{{ ubuntu_common_timezone }}"
+  notify: restart crond
   tags:
     - timezone
 

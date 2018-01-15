@@ -15,7 +15,7 @@ All the tasks need root privilege.
 Requirements
 ------------
 
-- Ansible (2.1.1+)
+- Ansible (2.2.0+)
 
 
 Role Variables
